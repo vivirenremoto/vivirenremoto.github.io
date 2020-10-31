@@ -11,11 +11,13 @@
 .pagination {
     visibility: hidden;
     justify-content: center;
+    margin-bottom:0;
 }
 
 .page-link {
     background: none;
     border-color: #007bff;
+    border-radius:1px !important;
 }
 
 .page-link:HOVER {
@@ -43,6 +45,7 @@
     .jumbotron {
         padding: 1rem;
         padding-bottom: 0;
+        margin-bottom:1rem;
     }
 
     .pagination {
@@ -56,7 +59,6 @@
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
         -ms-overflow-style: -ms-autohiding-scrollbar;
-        height: 65px;
     }
 
     #filters::-webkit-scrollbar {
