@@ -21,22 +21,22 @@ https://docs.google.com/spreadsheets/d/ID-DE-LA-HOJA-DE-CALCULO/edit#gid=0
 
 ### Personalización
 
-Si quieres que la cuadrícula de proyectos ocupe todo el ancho de pantalla cambia esta línea
+Ancho completo
 ```
 <div class="container fullwidth">
 ```
 
-Puedes hacer que la cabecera en escritorio se vea fija cambiando esta línea
+Cabecera fija
 ```
 <body class="fixed">
 ```
 
-Si quieres que se muestren más elementos por fila cambia esta línea para mostrar 4 elementos por fila
+Mostrar 4 elementos por fila
 ```
 <div class="col-md-3 item" data-category="{{category}}">
 ```
 
-Si quieres que se muestren más elementos por fila cambia esta línea para mostrar 6 elementos por fila
+Mostrar 6 elementos por fila
 ```
 <div class="col-md-2 item" data-category="{{category}}">
 ```
