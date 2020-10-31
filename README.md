@@ -30,3 +30,8 @@ Si quieres que se muestren más elementos por fila cambia esta línea para mostr
 ```
 <div class="col-md-4 item" data-category="{{category}}">
 ```
+
+Puedes hacer que la cabecera en escritorio se vea fija cambiando esta línea
+```
+<body class="fixed">
+```
