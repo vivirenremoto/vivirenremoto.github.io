@@ -19,10 +19,16 @@ function showInfo(data) {
         var category = $(this).data('category');
         if ($.inArray(category, categories) == -1) {
             categories.push(category);
-
-            $('.pagination').append('<li class="page-item btn_filter"><a class="page-link" href="#' + category + '">' + category + '</a></li>');
         }
     });
+
+
+    categories.sort();
+
+    $(categories).each(function (key, elem) {
+        $('.pagination').append('<li class="page-item btn_filter"><a class="page-link" href="#' + elem + '">' + elem + '</a></li>');
+    })
+
 
     $('.pagination').hide().css('visibility', 'visible').fadeIn('slow');
 
