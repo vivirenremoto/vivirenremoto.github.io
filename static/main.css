@@ -37,6 +37,8 @@
 #github{position:absolute;right:0;top:0;}
 #github img{width:120px;}
 
+.fullwidth{max-width: 99% !important;}
+
 @media only screen and (max-width: 480px) {
     .jumbotron {
         padding: 1rem;
@@ -77,6 +79,4 @@
     #github{
         position:fixed;z-index: 2;
     }
-
-    .fullwidth{max-width: 99% !important;}
 }
