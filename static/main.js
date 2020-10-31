@@ -41,7 +41,8 @@ function showInfo(data) {
 
         if (type) {
             $('.item').hide();
-            $('.category_' + type).show();
+
+            $('.item[data-category$="' + type + '"]').show();
 
         } else {
             $('.item').show();
@@ -52,7 +53,7 @@ function showInfo(data) {
 
 
     if (document.location.hash) {
-        $('.btn_filter a[href$=' + document.location.hash.replace('#', '') + ']').click();
+        $('.btn_filter a[href$="' + decodeURI(document.location.hash.replace('#', '')) + '"]').click();
     }
 }
 

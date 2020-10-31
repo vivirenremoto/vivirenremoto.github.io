@@ -23,7 +23,7 @@
 }
 
 .logo{
-    background:url('animate.gif');background-size:cover;background-position-y:center;width:800px;max-width:100%;margin-bottom:15px;
+    background:#000 url('animate.gif');background-size:cover;background-position-y:center;width:800px;max-width:100%;margin-bottom:15px;
 }
 
 .row img{
