@@ -29,13 +29,6 @@
             <nav>
                 <ul class="pagination">
                     <li class="page-item btn_filter active"><a class="page-link" href="#">Todo</a></li>
-                    <li class="page-item btn_filter"><a class="page-link" href="#web">Web</a></li>
-                    <li class="page-item btn_filter"><a class="page-link" href="#vr">VR</a></li>
-                    <li class="page-item btn_filter"><a class="page-link" href="#hardware">Hardware</a></li>
-                    <li class="page-item btn_filter"><a class="page-link" href="#apps">Apps</a></li>
-                    <li class="page-item btn_filter"><a class="page-link" href="#bots">Bots</a></li>
-                    <li class="page-item btn_filter"><a class="page-link" href="#extensiones">Extensiones</a></li>
-                    <li class="page-item btn_filter"><a class="page-link" href="#wordpress">Wordpress</a></li>
                 </ul>
             </nav>
         </div>
@@ -53,7 +46,7 @@
       <div class="row">
           {{#rows}}
 
-          <div class="col-md-3 item category_{{category}}">
+          <div class="col-md-3 item category_{{category}}" data-category="{{category}}">
             <div class="card mb-4 shadow-sm">
                 <a href="{{url}}" target="_blank">
                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" class="bd-placeholder-img card-img-top" width="100%" height="225" style="background-image:url('{{photo}}');" >

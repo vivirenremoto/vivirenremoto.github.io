@@ -13,13 +13,19 @@ function showInfo(data) {
     Sheetsee.makeTable(tableOptions);
     Sheetsee.initiateTableFilter(tableOptions);
 
-    if (document.location.hash) {
-        $('.btn_filter a[href$=' + document.location.hash.replace('#', '') + ']').click();
-    }
-}
 
+    var categories = [];
+    $('.item').each(function () {
+        var category = $(this).data('category');
+        if ($.inArray(category, categories) == -1) {
+            categories.push(category);
 
-$(function () {
+            $('.pagination').append('<li class="page-item btn_filter"><a class="page-link" href="#' + category + '">' + category + '</a></li>');
+        }
+    });
+
+    $('.pagination').hide().css('visibility', 'visible').fadeIn('slow');
+
     $('.btn_filter').click(function () {
 
         $('.btn_filter').removeClass('active');
@@ -35,5 +41,12 @@ $(function () {
             $('.item').show();
         }
 
-    })
-});
+    });
+
+
+
+    if (document.location.hash) {
+        $('.btn_filter a[href$=' + document.location.hash.replace('#', '') + ']').click();
+    }
+}
+
