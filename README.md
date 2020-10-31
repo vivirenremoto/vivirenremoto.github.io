@@ -26,12 +26,17 @@ Si quieres que la cuadrícula de proyectos ocupe todo el ancho de pantalla cambi
 <div class="container fullwidth">
 ```
 
-Si quieres que se muestren más elementos por fila cambia esta línea para mostrar 4 elementos por fila
-```
-<div class="col-md-4 item" data-category="{{category}}">
-```
-
 Puedes hacer que la cabecera en escritorio se vea fija cambiando esta línea
 ```
 <body class="fixed">
+```
+
+Si quieres que se muestren más elementos por fila cambia esta línea para mostrar 4 elementos por fila
+```
+<div class="col-md-3 item" data-category="{{category}}">
+```
+
+Si quieres que se muestren más elementos por fila cambia esta línea para mostrar 6 elementos por fila
+```
+<div class="col-md-2 item" data-category="{{category}}">
 ```
