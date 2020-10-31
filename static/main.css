@@ -1,6 +1,4 @@
-.jumbotron {
-    padding: 2rem 2rem;
-}
+
 
 .jumbotron .container {
     max-width: 40rem;
@@ -35,6 +33,10 @@
     background-color:#efefef;
 }
 
+
+#github{position:absolute;right:0;top:0;}
+#github img{width:120px;}
+
 @media only screen and (max-width: 480px) {
     .jumbotron {
         padding: 1rem;
@@ -57,5 +59,21 @@
 
     #filters::-webkit-scrollbar {
         display: none;
+    }
+
+    
+    #github img{width:80px;}
+}
+
+@media only screen and (min-width: 800px){
+    .jumbotron{
+        padding:2rem 2rem;
+        padding-bottom:1.5rem;
+    }
+
+
+
+    #github{
+        position:fixed;z-index: 2;
     }
 }
