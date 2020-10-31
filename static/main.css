@@ -23,7 +23,7 @@
 }
 
 .logo{
-    background:url('animate.gif');background-size:cover;background-position-y:center;width:800px;max-width:90%;margin-bottom:15px;
+    background:url('animate.gif');background-size:cover;background-position-y:center;width:800px;max-width:100%;margin-bottom:15px;
 }
 
 .row img{
@@ -62,6 +62,7 @@
     }
 
     
+    #github {display:none;}
     #github img{width:80px;}
 }
 
@@ -70,8 +71,6 @@
         padding:2rem 2rem;
         padding-bottom:1.5rem;
     }
-
-
 
     #github{
         position:fixed;z-index: 2;
