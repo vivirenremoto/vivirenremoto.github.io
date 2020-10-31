@@ -1,0 +1,59 @@
+.jumbotron {
+    padding: 2rem 2rem;
+}
+
+.jumbotron .container {
+    max-width: 40rem;
+}
+
+#Pagination {
+    display: none;
+}
+
+.pagination {
+    justify-content: center;
+}
+
+.page-link {
+    background: none;
+    border-color: #007bff;
+}
+
+.page-link:HOVER {
+    border-color: #007bff;
+}
+
+.logo{
+    background:url('animate.gif');background-size:cover;background-position-y:center;width:700px;max-width:90%;margin-bottom:15px;
+}
+
+.row img{
+    background-repeat:no-repeat;
+    background-position:top center;
+    background-size:cover;
+    background-color:#efefef;
+}
+
+@media only screen and (max-width: 480px) {
+    .jumbotron {
+        padding: 1rem;
+    }
+
+    .pagination {
+        justify-content: inherit;
+    }
+
+    #filters {
+        overflow-x: scroll;
+        margin-left: -30px;
+        margin-right: -30px;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        height: 65px;
+    }
+
+    #filters::-webkit-scrollbar {
+        display: none;
+    }
+}
