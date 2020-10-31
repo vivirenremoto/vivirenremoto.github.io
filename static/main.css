@@ -17,7 +17,6 @@
 .page-link {
     background: none;
     border-color: #007bff;
-    border-radius:1px !important;
 }
 
 .page-link:HOVER {
@@ -50,6 +49,10 @@
 
     .pagination {
         justify-content: inherit;
+    }
+
+    .page-link {
+        border-radius:1px !important;
     }
 
     #filters {
