@@ -64,6 +64,8 @@
     
     #github {display:none;}
     #github img{width:80px;}
+
+    .fullwidth{max-width: 100% !important;}
 }
 
 @media only screen and (min-width: 800px){
@@ -75,4 +77,6 @@
     #github{
         position:fixed;z-index: 2;
     }
+
+    .fullwidth{max-width: 99% !important;}
 }
