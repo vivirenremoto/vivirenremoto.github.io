@@ -79,4 +79,17 @@
     #github{
         position:fixed;z-index: 2;
     }
+
+    .fixed{
+        padding-top:260px;
+    }
+
+    .fixed .jumbotron{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
 }
