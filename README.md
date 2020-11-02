@@ -2,7 +2,7 @@
 
 Plantilla de portafolio que recoge datos de una hoja de cálculo en google drive.
 
-- [Demo](https://vivirenremoto.github.io/portafolio/)
+- [Demo](https://vivirenremoto.github.io/)
 
 - [Ejemplo de hoja de cálculo](https://docs.google.com/spreadsheets/d/1gjSO6dzKyucIQMkM3yo4DfZf7tSPOCfZ4wSMP5NInlU/edit?usp=sharing)
 
