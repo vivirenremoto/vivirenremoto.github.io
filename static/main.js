@@ -2,7 +2,7 @@ var timer_loading = setInterval(function(){
     var pos_x = parseInt($('.jumbotron').css('background-position-x'));
     pos_x--;
     $('.jumbotron').css('background-position-x', pos_x);
-}, 20);
+}, 15);
 
 document.addEventListener('DOMContentLoaded', function () {
     var URL = "1gjSO6dzKyucIQMkM3yo4DfZf7tSPOCfZ4wSMP5NInlU"
