@@ -36,7 +36,9 @@ function showInfo(data) {
     })
 
 
-    $('.pagination').hide().css('visibility', 'visible').fadeIn('slow');
+    $('.pagination').hide().css('visibility', 'visible').fadeIn('slow', function(){
+        clearInterval(timer_loading);
+    });
 
     $('.btn_filter').click(function () {
 
@@ -58,7 +60,7 @@ function showInfo(data) {
 
     
 
-    clearInterval(timer_loading);
+    
 
 
 
