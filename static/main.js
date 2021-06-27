@@ -1,7 +1,13 @@
+var timer_loading = setInterval(function(){
+    var pos_x = parseInt($('.jumbotron').css('background-position-x'));
+    pos_x--;
+    $('.jumbotron').css('background-position-x', pos_x);
+}, 25);
+
 document.addEventListener('DOMContentLoaded', function () {
     var URL = "1gjSO6dzKyucIQMkM3yo4DfZf7tSPOCfZ4wSMP5NInlU"
     Tabletop.init({ key: URL, callback: showInfo, simpleSheet: true })
-})
+});
 
 function showInfo(data) {
     var tableOptions = {
@@ -50,6 +56,10 @@ function showInfo(data) {
 
     });
 
+    
+    setTimeout(function(){
+        clearInterval(timer_loading);
+    }, 1000);
 
 
     if (document.location.hash) {
