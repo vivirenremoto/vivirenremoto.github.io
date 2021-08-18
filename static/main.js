@@ -4,10 +4,36 @@ var timer_loading = setInterval(function(){
     $('.jumbotron').css('background-position-x', pos_x);
 }, 15);
 
-document.addEventListener('DOMContentLoaded', function () {
-    var URL = "1gjSO6dzKyucIQMkM3yo4DfZf7tSPOCfZ4wSMP5NInlU"
-    Tabletop.init({ key: URL, callback: showInfo, simpleSheet: true })
-});
+var sf = "https://docs.google.com/spreadsheets/d/1gjSO6dzKyucIQMkM3yo4DfZf7tSPOCfZ4wSMP5NInlU/gviz/tq?tqx=out:json";
+$.ajax({url: sf, type: 'GET', dataType: 'text'})
+.done(function(data) {
+  const r = data.match(/google\.visualization\.Query\.setResponse\(([\s\S\w]+)\)/);
+  if (r && r.length == 2) {
+    const obj = JSON.parse(r[1]);
+    const table = obj.table;
+    const header = table.cols.map(({label}) => label);
+    const rows = table.rows.map(({c}) => c.map(({v}) => v));
+
+    let new_table = [];
+    for(let i=1; i<rows.length; i++){
+        new_table.push({
+            category: rows[i][0],
+            title: rows[i][1],
+            description: rows[i][2],
+            photo: rows[i][3],
+            url: rows[i][4],
+        });
+    }
+
+    showInfo(new_table);
+    
+  }
+})
+.fail((e) => console.log(e.status));
+
+
+
+
 
 function showInfo(data) {
     var tableOptions = {
