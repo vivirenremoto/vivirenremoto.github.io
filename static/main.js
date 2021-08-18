@@ -4,7 +4,7 @@ var timer_loading = setInterval(function(){
     $('.jumbotron').css('background-position-x', pos_x);
 }, 15);
 
-var sf = "https://docs.google.com/spreadsheets/d/1gjSO6dzKyucIQMkM3yo4DfZf7tSPOCfZ4wSMP5NInlU/gviz/tq?tqx=out:json";
+var sf = 'https://docs.google.com/spreadsheets/d/' + id_spreadsheet + '/gviz/tq?tqx=out:json';
 $.ajax({url: sf, type: 'GET', dataType: 'text'})
 .done(function(data) {
   const r = data.match(/google\.visualization\.Query\.setResponse\(([\s\S\w]+)\)/);
